@@ -148,6 +148,7 @@ class EdgePy(object):
             for line in results:
                 log.info(line)
 
+    # this is me trying to learn git from command line
     def ks_2_samples(self):
         """Run a 2-tailed Kolmogorov-Smirnov test on the DGEList object.
 
