@@ -310,7 +310,7 @@ class DGEList(object):
     def log_transform(self, counts, prior_count):
         """Compute the log of the counts"""
         counts[counts == 0] = prior_count
-        return np.log(counts)
+        return np.log2(counts)
 
     def cpm(self, transform_to_log: bool = False, prior_count: float = PRIOR_COUNT) -> "DGEList":
         """Normalize the DGEList to read counts per million."""
